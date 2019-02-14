@@ -4,8 +4,9 @@ class CocktailsController < ApplicationController
   end
 
   def show
-    @cocktails = Cocktail.all
     @cocktail = Cocktail.find(params[:id])
+    # @dose = dose.cocktail_id
+    # @ingredient = dose.ingredient_id
     # @doses = @cocktail.doses
     # @ingredient = @cocktail.ingredient
   end
