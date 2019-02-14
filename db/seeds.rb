@@ -12,3 +12,4 @@ ingredients.each do |ingredient|
     Ingredient.create(name: element['strIgrendient1'])
   end
 end
+
