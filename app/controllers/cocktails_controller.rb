@@ -22,4 +22,10 @@ class CocktailsController < ApplicationController
       render :new
     end
   end
+
+  private
+
+  def cocktail_params
+    params.require(:cocktail).permit(:name)
+  end
 end
