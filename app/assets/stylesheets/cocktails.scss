@@ -8,3 +8,19 @@ ul {
 h1 {
   font-size: 25px;
 }
+
+.btn {
+  background-color: #dd9521;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: #bc7709;
+    color: white;
+    border: none;
+  }
+}
+
+.back-button {
+  padding-top: 10px;
+}
+
