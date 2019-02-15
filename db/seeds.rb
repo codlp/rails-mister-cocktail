@@ -21,7 +21,16 @@ cocktails_attributes = [
     name:         'Mojito',
   },
   {
-    name:         'Blabla',
+    name:         'Punch',
+  },
+  {
+    name:         'Margarita',
+  },
+  {
+    name:         'Piña colada',
+  },
+  {
+    name:         'Blue lagoon',
   },
   {
     name:         'Cuba libre',
