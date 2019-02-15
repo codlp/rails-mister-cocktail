@@ -11,3 +11,21 @@ ingredients = JSON.parse(ingredient_serialized)
 ingredients['drinks'].each do |ingredient|
   Ingredient.create(name: ingredient['strIngredient1'])
 end
+
+puts 'Cleaning database...'
+Cocktail.destroy_all
+
+puts 'Creating cocktails...'
+cocktails_attributes = [
+  {
+    name:         'Mojito',
+  },
+  {
+    name:         'Blabla',
+  },
+  {
+    name:         'Cuba libre',
+  }
+]
+Cocktail.create!(cocktails_attributes)
+puts 'Finished!'
