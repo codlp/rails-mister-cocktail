@@ -12,7 +12,30 @@
   </head>
 
   <body>
+    <!-- BANNER -->
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80);">
+      <div class="container text-center">
+        <h1>Thirsty? We've got what you need</h1>
+        <p>Best cocktails from all around the world</p>
+      </div>
+    </div>
+
     <%= yield %>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/codlp"><i class="fab fa-github"></i></a>
+        <a href="https://fr.linkedin.com/in/coralie-delpha"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+      </div>
+    </div>
+
+    <!-- End of footer -->
+
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>

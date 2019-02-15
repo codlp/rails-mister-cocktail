@@ -1,9 +1,60 @@
 <div class="container">
-  <h1>All the delicious cocktails</h1>
-    <ul>
-      <% @cocktails.each do | cocktail | %>
-        <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <h1 class="text-center">Our delicious cocktails</h1>
+
+  <!-- Beginning of cards -->
+
+     <div class="container">
+      <div class="row">
+       <% @cocktails.each do | cocktail | %>
+       <div class="col-xs-12 col-sm-4">
+        <div class="card">
+         <div class="card-description" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/300x300/?cocktail">
+           <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+         </div>
+        </div>
+      </div>
       <% end %>
-    </ul>
-    <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+     </div>
+    </div>
+
+   <!-- End of cards -->
+
+  <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
 </div>
+
+
+
+    <!-- TESTIMONIALS -->
+
+  <section class="testimonials text-center bg-light">
+    <div class="container testimonials-container">
+      <h2 class="testimonials-title">What people are saying about us</h2>
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <%= image_tag("testimonials-1.jpg", class: "img-circle") %>
+            <h5>Valentine</h5>
+            <p class="font-weight-light mb-0">"They are indeed the best cocktails!"</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <%= image_tag("testimonials-2.jpg", class: "img-circle") %>
+            <h5>Elie</h5>
+            <p class="font-weight-light mb-0">"Thank you for making me discover all these flavors!"</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <%= image_tag("testimonials-3.jpg", class: "img-circle") %>
+            <h5>Karolina</h5>
+            <p class="font-weight-light mb-0">"So many awesome parties thanks to you!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
